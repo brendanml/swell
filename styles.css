@@ -75,7 +75,8 @@ h3 .cname {
     left: 0;
     background-color:black;
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
     height: 2rem;
     padding: 1rem;
     width: 100%;
@@ -83,7 +84,7 @@ h3 .cname {
 
 .head h1 {
     font-size: 2rem;
-    width: 25rem;
+    width: 100%;
     font-weight: bold;
     transition: all 0.1s;
 }
@@ -102,9 +103,10 @@ h3 .cname {
 
 .head .head-link {
     color: white;
+    text-align: center;
     text-decoration: none;
     margin: 1rem;
-    width: 100px; /* Set a fixed width */
+    width: 100%; /* Set a fixed width */
     transition: color 0.2s; /* Smooth transition */
 }
 .head .head-link:hover {
