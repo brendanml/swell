@@ -1,0 +1,190 @@
+/* Reset.css by Eric Meyer */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #1a1a1a;
+}
+
+.gut {
+    color: whitesmoke;
+}
+
+.foot {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+h3 {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+h3 .cname {
+    color: orange;
+    font-family: "DM Mono", monospace;
+    font-style: italic;
+}
+
+.head {
+    /* size, position, styling */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:black;
+    color: white;
+    display: flex;
+    height: 2rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.head h1 {
+    font-size: 2rem;
+    width: 25rem;
+    font-weight: bold;
+    transition: all 0.1s;
+}
+
+.head h1:hover {
+    text-shadow: 0 0 1.2rem white;
+}
+
+.head .links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.head .head-link {
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+    width: 100px; /* Set a fixed width */
+    transition: color 0.2s; /* Smooth transition */
+}
+.head .head-link:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.gut {
+    /* offset for fixed header */
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gut h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sub-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.sub-section p {
+    text-align: center;
+    margin: 1rem;
+}
+
+.faces {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.person img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    margin: 1rem;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person p {
+    font-weight: bold;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    width: 100%;
+    align-items: center;
+}
+
+.foot p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.foot img {
+    width: 50px;
+    margin: .5rem;
+    display: absolute;
+    justify-self: left;
+}
